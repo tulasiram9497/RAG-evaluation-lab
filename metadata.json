@@ -1,0 +1,6 @@
+{
+  "name": "RAG Evaluation Lab",
+  "description": "Production-grade Retrieval-Augmented Generation (RAG) platform with multi-strategy retrieval, automated evaluation on 50+ benchmark questions, experiment tracking, and real-time observability.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

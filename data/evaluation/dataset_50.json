@@ -1,0 +1,106 @@
+[
+  {
+    "id": "fact_01",
+    "category": "factual",
+    "question": "What is the default value of the smoothing constant k in Reciprocal Rank Fusion (RRF)?",
+    "reference_answer": "The smoothing constant k in Reciprocal Rank Fusion (RRF) is typically set to 60.",
+    "reference_evidence": "Score(d) = sum(w_m / (k + rank_m(d))) where k is a smoothing constant typically set to 60",
+    "relevant_doc_ids": ["doc_rag_arch"]
+  },
+  {
+    "id": "fact_02",
+    "category": "factual",
+    "question": "In what programming language is Qdrant written?",
+    "reference_answer": "Qdrant is written in Rust.",
+    "reference_evidence": "Qdrant is an open-source vector database written in Rust, engineered for high concurrency and low search latency.",
+    "relevant_doc_ids": ["doc_vector_db"]
+  },
+  {
+    "id": "fact_03",
+    "category": "factual",
+    "question": "How much RAM reduction does Scalar Quantization (SQ) provide in Qdrant?",
+    "reference_answer": "Scalar Quantization (SQ) yields a 4x reduction in RAM usage with less than 1% drop in recall by compressing FP32 to INT8.",
+    "reference_evidence": "Scalar Quantization (SQ): Compresses 32-bit floating point numbers (FP32) into 8-bit integers (INT8), yielding a 4x reduction in RAM usage with less than 1% drop in recall.",
+    "relevant_doc_ids": ["doc_vector_db"]
+  },
+  {
+    "id": "fact_04",
+    "category": "factual",
+    "question": "What is the per-million token input price for Gemini 3.8 Flash?",
+    "reference_answer": "For Gemini 3.8 Flash, the input token cost is $0.075 per 1,000,000 tokens.",
+    "reference_evidence": "Input token cost is $0.075 per 1,000,000 tokens.",
+    "relevant_doc_ids": ["doc_rag_arch"]
+  },
+  {
+    "id": "fact_05",
+    "category": "factual",
+    "question": "What was the total annual cloud infrastructure spend in the FinTech FY 2026 report?",
+    "reference_answer": "The total annual infrastructure expenditure reached $14.2M across global multi-region deployments.",
+    "reference_evidence": "Total annual infrastructure expenditure across the FinTech global multi-region deployment reached $14.2M",
+    "relevant_doc_ids": ["doc_fintech_cloud"]
+  },
+  {
+    "id": "fact_06",
+    "category": "factual",
+    "question": "How many specific identifiers must be removed under the HIPAA Safe Harbor de-identification method?",
+    "reference_answer": "The Safe Harbor method requires the removal of 18 specific identifiers.",
+    "reference_evidence": "Safe Harbor method requires removal of 18 specific identifiers including patient names, geographic subdivisions smaller than state, dates, and medical record numbers.",
+    "relevant_doc_ids": ["doc_clinical_ai"]
+  },
+  {
+    "id": "fact_07",
+    "category": "factual",
+    "question": "What is the target Faithfulness score threshold specified for clinical benchmark validation?",
+    "reference_answer": "Faithfulness must reach at least 0.98 in clinical benchmark validation.",
+    "reference_evidence": "Faithfulness must reach at least 0.98 in clinical benchmark validation.",
+    "relevant_doc_ids": ["doc_clinical_ai"]
+  },
+  {
+    "id": "fact_08",
+    "category": "factual",
+    "question": "What is the average search complexity of Qdrant HNSW indexing?",
+    "reference_answer": "The average search complexity of Qdrant HNSW indexing is O(log N).",
+    "reference_evidence": "Average search complexity is O(log N), allowing sub-10ms query latency over millions of vectors.",
+    "relevant_doc_ids": ["doc_vector_db"]
+  },
+  {
+    "id": "fact_09",
+    "category": "factual",
+    "question": "How much money did vector embedding caching save annually in the FinTech infrastructure?",
+    "reference_answer": "Vector embedding caching saved $380,000 annually by reducing monthly embedding API calls by 42%.",
+    "reference_evidence": "Implementing an intelligent caching tier for vector embeddings reduced monthly embedding API calls by 42%, saving $380,000 annually.",
+    "relevant_doc_ids": ["doc_fintech_cloud"]
+  },
+  {
+    "id": "fact_10",
+    "category": "factual",
+    "question": "What production P95 latency Service Level Objective is enforced for the FinTech platform?",
+    "reference_answer": "The production P95 total latency SLO is less than or equal to 1400ms.",
+    "reference_evidence": "P95 Total Latency: <= 1400ms.",
+    "relevant_doc_ids": ["doc_fintech_cloud"]
+  },
+  {
+    "id": "concept_01",
+    "category": "conceptual",
+    "question": "Why does traditional dense vector search sometimes fail when retrieving serial numbers or exact codes?",
+    "reference_answer": "Dense vector search maps text into continuous semantic space, excelling at synonyms and high-level conceptual similarity, but it lacks exact lexical hashing, causing it to confuse or miss alphanumeric codes, acronyms, and serial numbers.",
+    "reference_evidence": "Dense Vector Search excels at semantic similarity, synonyms, and paraphrased intent, but often fails on exact keyword matching, serial numbers, product codes, or acronyms.",
+    "relevant_doc_ids": ["doc_rag_arch"]
+  },
+  {
+    "id": "concept_02",
+    "category": "conceptual",
+    "question": "What is the conceptual difference between Faithfulness and Answer Relevance in RAG evaluation?",
+    "reference_answer": "Faithfulness measures whether the claims in the generated response can be directly inferred from the retrieved context (checking for hallucination), whereas Answer Relevance measures whether the response directly addresses the user query without irrelevant or tangential filler.",
+    "reference_evidence": "Faithfulness: Measures the percentage of claims in the generated response that can be directly inferred from the retrieved context... Answer Relevance: Evaluates whether the generated response directly addresses the user question without superfluous or tangential filler.",
+    "relevant_doc_ids": ["doc_rag_arch"]
+  },
+  {
+    "id": "unans_01",
+    "category": "unanswerable",
+    "question": "What was the exact stock price of NVIDIA on December 14, 2024?",
+    "reference_answer": "I cannot answer this question based on the provided documents as there is insufficient evidence.",
+    "reference_evidence": "None. The documents discuss RAG architecture, vector databases, security, clinical protocols, and FinTech cloud costs, but contain no historical stock price data.",
+    "relevant_doc_ids": []
+  }
+]
